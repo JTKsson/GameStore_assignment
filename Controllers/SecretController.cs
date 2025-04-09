@@ -7,12 +7,12 @@ namespace GameStore.Controllers
     [ApiController]
     public class SecretController : ControllerBase
     {
-        private readonly ILogger<HomeController> _logger;
         private readonly string _blobSasToken;
 
         public SecretController(IConfiguration configuration)
         {
-            _blobSasToken = configuration["BlobSasToken"];
+            // Use null-coalescing operator to ensure a non-null value
+            _blobSasToken = configuration["BlobSasToken"] ?? "secret not found";
         }
 
         [HttpGet]

@@ -15,7 +15,7 @@ public class Program
 
         // Use DefaultAzureCredential for authentication
         var client = new SecretClient(new Uri(kvUri), new DefaultAzureCredential());
-        string secretValue = string.Empty;
+        string secretValue;
 
         try
         {
@@ -27,6 +27,7 @@ public class Program
         }
         catch (Exception ex)
         {
+            secretValue = "Error retrieving secret";
             Console.WriteLine($"Error retrieving secret: {ex.Message}");
         }
 
