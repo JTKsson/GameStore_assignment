@@ -103,6 +103,12 @@ Som jag uppfattar situationen, är att Microsoft tillhandahåller ett VM som hos
 <img src="https://gamestorestorage1337.blob.core.windows.net/blobs-anon/error-parallellism.png"/>
 
 
+EDIT:
+Jag har fått en VM för Pipeline tilldelat mig, så jag har nu en lyckad pipeline. 
+
+<img src="https://gamestorestorage1337.blob.core.windows.net/blobs-anon/Skärmbild 2025-04-15 102254.png" />
+
+
 
 
 
